@@ -1,0 +1,9 @@
+:root {
+    --font: 'Iosevka Web', 'Segoe UI', sans-serif;
+    /* Fuente moderna y limpia */
+}
+
+
+body {
+    font-family: var(--font);
+}

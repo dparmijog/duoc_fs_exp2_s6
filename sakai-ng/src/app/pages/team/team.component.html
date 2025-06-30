@@ -1,0 +1,85 @@
+<div class="team-page">
+    <h1 class="team-title">Meet Our Team</h1>
+    <div class="team-container">
+        <div class="team-member">
+            <img src="assets/images/member1.jpg" alt="Team Member 1" class="team-photo">
+            <h2 class="member-name">John Doe</h2>
+            <p class="member-role">Project Manager</p>
+            <p class="member-description">
+                John is an experienced project manager who ensures everything runs smoothly and on time.
+            </p>
+        </div>
+        <div class="team-member">
+            <img src="assets/images/member2.jpg" alt="Team Member 2" class="team-photo">
+            <h2 class="member-name">Jane Smith</h2>
+            <p class="member-role">Lead Developer</p>
+            <p class="member-description">
+                Jane is a coding wizard who brings innovative ideas to life with her expertise.
+            </p>
+        </div>
+        <div class="team-member">
+            <img src="assets/images/member3.jpg" alt="Team Member 3" class="team-photo">
+            <h2 class="member-name">Emily Johnson</h2>
+            <p class="member-role">UI/UX Designer</p>
+            <p class="member-description">
+                Emily designs intuitive and beautiful user experiences for our projects.
+            </p>
+        </div>
+    </div>
+</div>
+
+<style>
+    .team-page {
+        text-align: center;
+        padding: 20px;
+        font-family: Arial, sans-serif;
+    }
+
+    .team-title {
+        font-size: 2.5em;
+        margin-bottom: 20px;
+        color: #333;
+    }
+
+    .team-container {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+
+    .team-member {
+        background: #f9f9f9;
+        border-radius: 10px;
+        padding: 15px;
+        width: 250px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+    }
+
+    .team-member:hover {
+        transform: scale(1.05);
+    }
+
+    .team-photo {
+        width: 100%;
+        border-radius: 10px;
+    }
+
+    .member-name {
+        font-size: 1.5em;
+        margin: 10px 0 5px;
+        color: #555;
+    }
+
+    .member-role {
+        font-size: 1.2em;
+        color: #888;
+        margin-bottom: 10px;
+    }
+
+    .member-description {
+        font-size: 1em;
+        color: #666;
+    }
+</style>

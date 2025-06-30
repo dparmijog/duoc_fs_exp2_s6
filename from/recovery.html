@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" /> <!-- Codificación estándar para soportar caracteres especiales -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Para dispositivos móviles -->
+  <title>Recuperar Contraseña</title> <!-- Título de la pestaña -->
+
+  <!-- Bootstrap para estilos rápidos -->
+  <link href="css/bootstrap.min.css" rel="stylesheet"> <!-- Bootstrap -->
+  <link href="https://pvinis.github.io/iosevka-webfont/3.4.1/iosevka.css" rel="stylesheet" />
+  <!-- Estilos personalizados del sitio -->
+  <link rel="stylesheet" href="css/theme.css">
+  <link rel="stylesheet" href="css/styles.css" /> 
+</head>
+<body>
+  <!-- NAVBAR simple con link al inicio -->
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        IdentiBattles
+      </a>
+    </div>
+  </nav>
+
+  <!-- CONTENIDO PRINCIPAL -->
+  <main class="container my-5">
+    <div class="d-flex justify-content-center h-100 "><!-- Contenedor centrado con margen vertical -->
+    
+
+    <!-- FORMULARIO de recuperación -->
+    <form id="form-recuperar" novalidate style="display: none;">
+      <h1 class="text-center mb-4">Recuperar Contraseña</h1>
+      <!-- Campo de correo -->
+      <div class="mb-3">
+        <label for="email" class="form-label">Correo electrónico registrado</label>
+        <input type="email" class="form-control" id="email" required>
+        <div class="invalid-feedback">Ingresa un correo válido.</div>
+      </div>
+    </form>
+    <form id="form-otp" novalidate style="display: none;">
+      <h1 class="text-center mb-4">One-Time Password 🔐</h1>
+      <!-- Campo de correo -->
+      <div class="mb-3">
+        <label for="otp" class="form-label">Codigo</label>
+        <input type="otp" class="form-control" id="otp" required>
+        <code>tip: 111111</code>
+        <div class="invalid-feedback">Ingresa un codigo valido</div>
+      </div>
+    </form>
+    <form id="form-nueva-password" novalidate style="display: none;">
+      <h1 class="text-center mb-4">Nueva contraseña</h1>
+      <!-- Campo de nueva contraseña -->
+      <div class="mb-3">
+        <label for="nuevaPassword" class="form-label">Nueva contraseña</label>
+        <input type="password" class="form-control" id="nuevaPassword" required>
+        <div class="invalid-feedback">Debe cumplir los requisitos de seguridad.</div>
+      </div>
+
+      <!-- Campo para confirmar nueva contraseña -->
+      <div class="mb-3">
+        <label for="confirmarPassword" class="form-label">Confirmar nueva contraseña</label>
+        <input type="password" class="form-control" id="confirmarPassword" required>
+        <div class="invalid-feedback">Las contraseñas deben coincidir.</div>
+      </div>
+
+      <!-- Botón de envío -->
+      <button type="submit" class="btn btn-primary">Recuperar</button>
+    </form>
+    </div>
+  </main>
+
+  <!-- PIE DE PÁGINA -->
+  <footer class="bg-dark text-white text-center py-3 mt-5">
+    <p class="mb-0">&copy; 2024 IdentuBattles - Todos los derechos reservados.</p>
+  </footer>
+
+  <!-- Scripts de validación y funcionalidad -->
+  <script src="js/validaciones.js"></script> <!-- Validaciones comunes -->
+  <script src="js/top.bar.js"></script> <!-- Funcionalidad para OTP -->
+  <script src="js/recovery.js"></script> <!-- Funcionalidad específica para este formulario -->
+</body>
+</html>
